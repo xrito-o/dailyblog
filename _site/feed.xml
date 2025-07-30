@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://xrito-o.github.io/dailyblog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://xrito-o.github.io/dailyblog/" rel="alternate" type="text/html" /><updated>2025-07-30T16:21:17+00:00</updated><id>https://xrito-o.github.io/dailyblog/feed.xml</id><title type="html">My Minimal Blog(no style, please!)</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
+</subtitle><author><name>Riccardo Graziosi</name></author><entry><title type="html">Jlpt Study Routine</title><link href="https://xrito-o.github.io/dailyblog/jlpt-study-routine.html" rel="alternate" type="text/html" title="Jlpt Study Routine" /><published>2025-07-02T00:00:00+00:00</published><updated>2025-07-02T00:00:00+00:00</updated><id>https://xrito-o.github.io/dailyblog/JLPT-STUDY-ROUTINE</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/jlpt-study-routine.html"><![CDATA[<hr />
+
+<h3 id="exam-date-july-6-2025-saturday"><strong>EXAM DATE: July 6, 2025 (Saturday)</strong></h3>
+
+<h3 id="days-remaining-35-days"><strong>DAYS REMAINING: 35 DAYS</strong></h3>
+
+<hr />
+
+<h2 id="exam-structure">Exam Structure</h2>
+
+<ol>
+  <li><strong>Vocabulary and Kanji</strong></li>
+  <li><strong>Grammar and Reading</strong></li>
+  <li><strong>Listening</strong></li>
+</ol>
+
+<h2 id="study-plan">Study Plan</h2>
+
+<hr />
+
+<h5 id="master-hiragana-katakana-and-kanji"><strong>Master Hiragana, Katakana and Kanji</strong></h5>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Master Hiragana, Katakana and Kanji
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Hiragana</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Katakana</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Kanji</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="master-vocabulary"><strong>Master Vocabulary</strong></h5>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Vocabulary
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Days of the week</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Numbers (1-100)</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Basic adjectives
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 1-5</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 6-10</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 11-15</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 16-20</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 21-25</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Nouns
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 1-5</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 6-10</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 11-15</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 16-20</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 21-25</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Common verbs
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 1-5</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 6-10</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 11-15</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 16-20</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 21-25</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Adverbs
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 1-5</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 6-10</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 11-15</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 16-20</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 21-25</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="master-basic-grammar"><strong>Master Basic Grammar</strong></h5>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Basic Grammar
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 1</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 2</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 3</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 4</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 5</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 6</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 7</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 8</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 9</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 10</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 11</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 12</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 13</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 14</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 15</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 16</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />lesson 17</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 18</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 19</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 20</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 21</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 22</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 23</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 24</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />lesson 25</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Sentence structure (Subject-Object-Verb)</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Particles
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />は</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />も</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />に</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />が</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />へ</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />で</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />を</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />の</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />と</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />か</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Sentence-ending particles like ‘ね’ (<em>ne</em>) and ‘よ’ (<em>yo</em>) add tone.</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Verb conjugations (ます form, て form)
+        <ul class="task-list">
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />て form</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />た form</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />ない form</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />dictionary form</li>
+          <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ます form</li>
+        </ul>
+      </li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Adjectives conjugations</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="listening"><strong>Listening</strong></h5>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mondai-1</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mondai-2</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mondai-3</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mondai-4</li>
+</ul>
+
+<h2 id="daily-test-schedule-2-hour-test">Daily Test Schedule (2 hour test)</h2>
+
+<hr />
+
+<ul>
+  <li>30 minutes: Vocabulary and kanji test.</li>
+  <li>30 minutes: Grammar practice test.</li>
+  <li>30 minutes: Listening practice test.</li>
+  <li>30 minutes: reviewing the test.</li>
+</ul>]]></content><author><name>Riccardo Graziosi</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Sylhet Shada Pathor And Jaflong Tour</title><link href="https://xrito-o.github.io/dailyblog/sylhet-shada-pathor-and-jaflong-tour.html" rel="alternate" type="text/html" title="Sylhet Shada Pathor And Jaflong Tour" /><published>2025-06-29T04:28:19+00:00</published><updated>2025-06-29T04:28:19+00:00</updated><id>https://xrito-o.github.io/dailyblog/Sylhet-Shada-Pathor-And-Jaflong-Tour</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/sylhet-shada-pathor-and-jaflong-tour.html"><![CDATA[<p><strong>Date:2022-10-16</strong></p>
+
+<p>Some unforgettable memories from that tour.</p>
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_124605_1.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_124605_1.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_124607_1.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_124609_1.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_133356.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_133541.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_133557_1.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_133608.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_135431.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_135433 (1).jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_135437.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_135508 (1).jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_135508.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221016_140334 (1).jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_083939.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_083941_1.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_083954.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_083958.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_101933.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_103424.jpg" alt="alt text" /></p>
+
+<hr />
+
+<p><img src="../../../screenshots/Sylhet-Jaflong/IMG_20221017_103430.jpg" alt="alt text" /></p>
+
+<hr />]]></content><author><name>Riccardo Graziosi</name></author><summary type="html"><![CDATA[Date:2022-10-16]]></summary></entry><entry><title type="html">Japanese School Interview Questions 2</title><link href="https://xrito-o.github.io/dailyblog/japanese-school-interview-questions-2.html" rel="alternate" type="text/html" title="Japanese School Interview Questions 2" /><published>2025-06-29T00:00:00+00:00</published><updated>2025-06-29T00:00:00+00:00</updated><id>https://xrito-o.github.io/dailyblog/japanese-school-interview-questions-2</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/japanese-school-interview-questions-2.html"><![CDATA[<h3 id="common-questions-they-ask-in-japanese-language-school-interviews"><strong>Common questions they ask in Japanese language school interviews</strong></h3>
+
+<h4 id="self-introductionじこしょうかい"><strong>Self-Introduction(じこしょうかい)</strong></h4>
+
+<p>わたしの　<strong>なまえ</strong>　は　モハマド・モダシル(Mohammad Moddassir)　です。</p>
+
+<p>こくせき　は　バングラデシュ　です。</p>
+
+<p>わたしは　にほんご　の　がくせい　です。</p>
+
+<p>わたしは　じゅうきゅうさい　です。</p>
+
+<p>どうぞ　よろしく　おねがい　します。</p>
+
+<ul>
+  <li>Name.</li>
+  <li>Nationality.</li>
+  <li>Japanese language students.</li>
+  <li>Age.</li>
+  <li>Thank you so much.</li>
+</ul>
+
+<hr />
+
+<h4 id="familyかぞく"><strong>Family(かぞく)</strong></h4>
+<ul>
+  <li>Please tell me about your family.</li>
+  <li>How many people are in your family? (かぞく は なんにん いますか。)
+    <ul>
+      <li>かぞく は よにん います。</li>
+    </ul>
+  </li>
+  <li>Who and who?(だれ と だれ ですか。)
+    <ul>
+      <li>おとさん と　おかさん と いもうと　と　おとうと と わたし です。</li>
+    </ul>
+  </li>
+  <li>Whats your father name?(おとさん　の　おなまえ　は　なん　ですか。)
+    <ul>
+      <li>ムハンマド・シラジュル・イスラム です。</li>
+    </ul>
+  </li>
+  <li>How old is your father?(おとさん　は　なんさい　ですか。)
+    <ul>
+      <li>よんじょうろく　さい　です。(46)</li>
+    </ul>
+  </li>
+  <li>What is your father doing?(おとさん　は なに　を　していますか。)
+    <ul>
+      <li>……………………..</li>
+    </ul>
+  </li>
+  <li>What is his job?(おしごと　は　なん　ですか。)
+    <ul>
+      <li>……………………..</li>
+    </ul>
+  </li>
+  <li>Whats your mother name？(おかさん　の　おなまえ　は　なん　ですか。)
+    <ul>
+      <li>ラヒマ・ベグムです。</li>
+    </ul>
+  </li>
+  <li>How old is your mother?(おかさん　は　なんさい　ですか。)
+    <ul>
+      <li>よんじょうに　さい　です。(42)</li>
+    </ul>
+  </li>
+  <li>What is your mother doing?(おかさん　は なに　を　していますか。)
+    <ul>
+      <li>しゅふ(主婦) です。(housewife)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>who is you sponser?(スポンサーはだれですか。)
+    <ul>
+      <li>おとさん です。</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Riccardo Graziosi</name></author><summary type="html"><![CDATA[Common questions they ask in Japanese language school interviews]]></summary></entry><entry><title type="html">Test</title><link href="https://xrito-o.github.io/dailyblog/test.html" rel="alternate" type="text/html" title="Test" /><published>2025-06-27T00:00:00+00:00</published><updated>2025-06-27T00:00:00+00:00</updated><id>https://xrito-o.github.io/dailyblog/test</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/test.html"><![CDATA[<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="gh">normal post:
+---
+</span>layout: post
+<span class="gh">hidden: true
+---
+</span>
+<span class="gh">custom category:
+---
+</span>layout: post
+category: example
+<span class="gh">hidden: true
+---
+</span>
+<span class="gh">custom js:
+---
+</span>layout: post
+custom_js: mouse_coords
+<span class="gh">hidden: true
+---
+</span>
+</code></pre></div></div>]]></content><author><name>Riccardo Graziosi</name></author><summary type="html"><![CDATA[```md]]></summary></entry><entry><title type="html">Japanese School Interview Questions 1</title><link href="https://xrito-o.github.io/dailyblog/japanese-school-interview-questions-1.html" rel="alternate" type="text/html" title="Japanese School Interview Questions 1" /><published>2025-06-27T00:00:00+00:00</published><updated>2025-06-27T00:00:00+00:00</updated><id>https://xrito-o.github.io/dailyblog/japanese-school-interview-questions-1</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/japanese-school-interview-questions-1.html"><![CDATA[<h4 id="interview-dates">Interview dates</h4>
+<p>ao-i-s school interview date: 01-07-2025</p>
+
+<h3 id="common-questions-they-ask-in-japanese-language-school-interviews"><strong>Common questions they ask in Japanese language school interviews</strong></h3>
+
+<h4 id="self-introductionじこしょうかい"><strong>Self-Introduction(じこしょうかい)</strong></h4>
+
+<p>わたしの　<strong>なまえ</strong>　は　モハマド・モダシル(Mohammad Moddassir)　です。こくせき　は　バングラデシュ　です。わたしは　にほんご　の　がくせい　です。わたしは　じゅうきゅうさい　です。どうぞ　よろしく　おねがい　します。</p>
+
+<ul>
+  <li>Name.</li>
+  <li>Nationality.</li>
+  <li>Japanese language students.</li>
+  <li>Age.</li>
+  <li>Thank you so much.</li>
+</ul>
+
+<hr />
+
+<h4 id="familyかぞく"><strong>Family(かぞく)</strong></h4>
+<ul>
+  <li>Please tell me about your family.</li>
+  <li>how many people are in your family? (かぞく は なんにん ですか。)
+    <ul>
+      <li>かぞく は よにん です。</li>
+    </ul>
+  </li>
+  <li>Who and who?(だれ と だれ ですか。)
+    <ul>
+      <li>おとさん と　おかさん と いもうと　と　おとうと と わたし です。</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>What are your hobbies?</li>
+  <li>Are you working now?</li>
+  <li>Are you attending school now?</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>Reason for Studying Japanese
+    <ul>
+      <li>Why do you want to study Japanese?</li>
+      <li>Why did you choose this school?</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>Study related
+    <ul>
+      <li>Have you studied Japanese before? For how long?, How long have you studied Japanese?</li>
+      <li>Which textbook did you use?</li>
+      <li>Where did you study Japanese?</li>
+      <li>How many kanji can you read?</li>
+      <li>Can you write your name in Katakana?</li>
+      <li>Can you write Hiragana and Katakana?</li>
+      <li>Is studying Japanese difficult?</li>
+      <li>What do you like about the Japanese language?</li>
+      <li>Do you want to do part-time work in Japan?</li>
+      <li>What will you do after graduation?</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>Future Plans
+    <ul>
+      <li>What do you want to do with Japanese in the future?</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>very simple questions
+    <ul>
+      <li>これは何ですか？(What is this?)</li>
+      <li>今日の天気はどうですか？(What is the weather like today?)</li>
+      <li>何時に起きますか？(what time do you get up?)</li>
+      <li>What day of the week is today?</li>
+      <li>What is your favorite food?</li>
+      <li>Do you study Japanese every day?</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>If you don’t understand, it’s OK to say
+    <ul>
+      <li>すみません、もう一度お願いします。 (Excuse me, please say it again.)</li>
+      <li>ゆっくり話してください。 (Please speak slowly.)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />]]></content><author><name>Riccardo Graziosi</name></author><summary type="html"><![CDATA[Interview dates ao-i-s school interview date: 01-07-2025]]></summary></entry></feed>

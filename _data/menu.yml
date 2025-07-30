@@ -1,0 +1,43 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: "Info"
+    entries:
+      - title: "I write words, learn new things, and make things."
+      - title: "My GitHub Repo"
+        url: "https://github.com/nyxone/nyxone.github.io/"
+      - title: "Blogs"
+        url: "archive.html"
+      - title: "Now"
+        url: "now"
+      - title: "I also have a <a href='https://blog.xrito.xyz/'>tech blog</a>"
+
+  - title: "My Most Recent Posts"
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: "See archive..."
+      show_more_url: "archive.html"
+
+  - title: "Posts by Category"
+    post_list:
+      category: "example2"
+      show_more: true
+      show_more_text: "See more posts..."
+      show_more_url: "example2-archive.html"
+
+  - title: "RSS Feed"
+    url: "feed.xml"
+
+  - title: "More Links"
+    entries:
+      - title: "With Subitems"
+        entries:
+          - title: "With Subsubitems"
+          - title: "Example Page"
+            url: "about"
+
+  - title: "Pro Tip"
+    entries:
+      - title: "To edit this menu, edit the _data/menu.yml file."
