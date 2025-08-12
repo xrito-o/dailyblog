@@ -8,5 +8,8 @@ gem "csv"
 gem "bigdecimal"
 gem "base64"
 gem "logger"
+gem "jekyll-sitemap"
+gem 'jekyll-lunr-js-search'
+
 
 gemspec

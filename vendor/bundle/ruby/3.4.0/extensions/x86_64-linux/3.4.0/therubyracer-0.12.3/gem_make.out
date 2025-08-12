@@ -1,0 +1,2067 @@
+current directory: /home/xrito/git/dailyblog/vendor/bundle/ruby/3.4.0/gems/therubyracer-0.12.3/ext/v8
+/usr/bin/ruby extconf.rb
+checking for -lpthread... yes
+creating Makefile
+
+current directory: /home/xrito/git/dailyblog/vendor/bundle/ruby/3.4.0/gems/therubyracer-0.12.3/ext/v8
+make DESTDIR\= sitearchdir\=./.gem.20250812-153146-pusghw sitelibdir\=./.gem.20250812-153146-pusghw clean
+
+current directory: /home/xrito/git/dailyblog/vendor/bundle/ruby/3.4.0/gems/therubyracer-0.12.3/ext/v8
+make DESTDIR\= sitearchdir\=./.gem.20250812-153146-pusghw sitelibdir\=./.gem.20250812-153146-pusghw
+compiling accessor.cc
+In file included from accessor.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+accessor.cc: In constructor ‘rr::Accessor::Info::Info(VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+accessor.cc:125:5: note: in expansion of macro ‘Data_Get_Struct’
+  125 |     Data_Get_Struct(value, class v8::AccessorInfo, info);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+accessor.cc: In member function ‘rr::Accessor::Info::operator VALUE()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+accessor.cc:179:12: note: in expansion of macro ‘Data_Wrap_Struct’
+  179 |     return Data_Wrap_Struct(Class, 0, 0, (void*)this->info);
+      |            ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::String; VALUE = long unsigned int]’:
+accessor.cc:130:18:   required from here
+  130 |     return Value(rb_funcall(accessor.get, rb_intern("call"), 2, (VALUE)String(property), (VALUE)*this));
+      |                                                                        ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling array.cc
+In file included from array.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Array; VALUE = long unsigned int]’:
+array.cc:15:10:   required from here
+   15 |   return Array(v8::Array::New(RTEST(length) ? NUM2INT(length) : 0));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling backref.cc
+In file included from backref.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling constants.cc
+In file included from constants.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Primitive; VALUE = long unsigned int]’:
+rr.h:870:18:   required from ‘static VALUE rr::Constants::cached(VALUE*, v8::Handle<V>) [with R = rr::Primitive; V = v8::Primitive; VALUE = long unsigned int]’
+  870 |       *storage = R(value);
+      |                  ^~~~~~~~
+constants.cc:23:44:   required from here
+   23 |     return cached<Primitive, v8::Primitive>(&_Undefined, v8::Undefined());
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling constraints.cc
+In file included from constraints.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+constraints.cc: In member function ‘void rr::Pointer<T>::unwrap(VALUE) [with T = v8::ResourceConstraints; VALUE = long unsigned int]’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+constraints.cc:50:5: note: in expansion of macro ‘Data_Get_Struct’
+   50 |     Data_Get_Struct(value, class v8::ResourceConstraints, pointer);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Pointer<T>::operator VALUE() [with T = v8::ResourceConstraints; VALUE = long unsigned int]’:
+constraints.cc:23:12:   required from here
+   23 |     return ResourceConstraints(new v8::ResourceConstraints());
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:136:12: note: in expansion of macro ‘Data_Wrap_Struct’
+  136 |     return Data_Wrap_Struct(Class, 0, &release, pointer);
+      |            ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling context.cc
+In file included from context.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+context.cc: In member function ‘void rr::Pointer<T>::unwrap(VALUE) [with T = v8::ExtensionConfiguration; VALUE = long unsigned int]’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+context.cc:127:3: note: in expansion of macro ‘Data_Get_Struct’
+  127 |   Data_Get_Struct(value, class v8::ExtensionConfiguration, pointer);
+      |   ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Context; VALUE = long unsigned int]’:
+context.cc:49:10:   required from here
+   49 |   return Context(v8::Context::GetEntered());
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Pointer<T>::operator VALUE() [with T = v8::ExtensionConfiguration; VALUE = long unsigned int]’:
+context.cc:102:10:   required from here
+  102 |   return ExtensionConfiguration(new v8::ExtensionConfiguration(length, array));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:136:12: note: in expansion of macro ‘Data_Wrap_Struct’
+  136 |     return Data_Wrap_Struct(Class, 0, &release, pointer);
+      |            ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling date.cc
+In file included from date.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling exception.cc
+In file included from exception.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling external.cc
+In file included from external.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::External; VALUE = long unsigned int]’:
+external.cc:12:10:   required from here
+   12 |   return External(wrap(data));
+      |          ^~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling function.cc
+In file included from function.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling gc.cc
+In file included from gc.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling handles.cc
+In file included from handles.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling heap.cc
+In file included from heap.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+heap.cc: In member function ‘void rr::Pointer<T>::unwrap(VALUE) [with T = v8::HeapStatistics; VALUE = long unsigned int]’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+heap.cc:33:5: note: in expansion of macro ‘Data_Get_Struct’
+   33 |     Data_Get_Struct(value, class v8::HeapStatistics, pointer);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Pointer<T>::operator VALUE() [with T = v8::HeapStatistics; VALUE = long unsigned int]’:
+heap.cc:15:12:   required from here
+   15 |     return HeapStatistics(new v8::HeapStatistics());
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:136:12: note: in expansion of macro ‘Data_Wrap_Struct’
+  136 |     return Data_Wrap_Struct(Class, 0, &release, pointer);
+      |            ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling init.cc
+In file included from init.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+init.cc: In function ‘void Init_init()’:
+init.cc:11:20: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
+   11 |     v8::Locker lock();
+      |                    ^~
+init.cc:11:20: note: remove parentheses to default-initialize a variable
+   11 |     v8::Locker lock();
+      |                    ^~
+      |                    --
+init.cc:11:20: note: or replace parentheses with braces to value-initialize a variable
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling invocation.cc
+In file included from invocation.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+invocation.cc: In constructor ‘rr::Invocation::Arguments::Arguments(VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+invocation.cc:51:5: note: in expansion of macro ‘Data_Get_Struct’
+   51 |     Data_Get_Struct(value, class v8::Arguments, args);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+invocation.cc: In member function ‘v8::Handle<v8::Value> rr::Invocation::Arguments::Call()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+/usr/include/ruby-3.4.0/ruby/ruby.h:411:42: note: in definition of macro ‘rb_funcall’
+  411 |         const VALUE rb_funcall_args[] = {__VA_ARGS__}; \
+      |                                          ^~~~~~~~~~~
+invocation.cc:56:68: note: in expansion of macro ‘Data_Wrap_Struct’
+   56 |     return Value(rb_funcall(invocation.code, rb_intern("call"), 1, Data_Wrap_Struct(Class, 0, 0, (void*)this->args)));
+      |                                                                    ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Function; VALUE = long unsigned int]’:
+invocation.cc:68:12:   required from here
+   68 |     return Function(Arguments(self)->Callee());
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling locker.cc
+In file included from locker.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling message.cc
+In file included from message.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::String; VALUE = long unsigned int]’:
+message.cc:22:12:   required from here
+   22 |     return String(Message(self)->Get());
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling object.cc
+In file included from object.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Function; VALUE = long unsigned int]’:
+object.cc:160:12:   required from here
+  160 |     return Function((v8::Handle<v8::Function>) v8::Function::Cast(*handle));
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling primitive.cc
+In file included from primitive.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling rr.cc
+In file included from rr.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling script.cc
+In file included from script.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+script.cc: In member function ‘void rr::Pointer<T>::unwrap(VALUE) [with T = v8::ScriptData; VALUE = long unsigned int]’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+script.cc:108:3: note: in expansion of macro ‘Data_Get_Struct’
+  108 |   Data_Get_Struct(value, class v8::ScriptData, pointer);
+      |   ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+script.cc: In member function ‘void rr::Pointer<T>::unwrap(VALUE) [with T = v8::ScriptOrigin; VALUE = long unsigned int]’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+script.cc:112:3: note: in expansion of macro ‘Data_Get_Struct’
+  112 |   Data_Get_Struct(value, class v8::ScriptOrigin, pointer);
+      |   ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Pointer<T>::operator VALUE() [with T = v8::ScriptOrigin; VALUE = long unsigned int]’:
+script.cc:30:10:   required from here
+   30 |   return ScriptOrigin(new v8::ScriptOrigin(*String(name), loff, coff));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:136:12: note: in expansion of macro ‘Data_Wrap_Struct’
+  136 |     return Data_Wrap_Struct(Class, 0, &release, pointer);
+      |            ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Script; VALUE = long unsigned int]’:
+script.cc:65:12:   required from here
+   65 |     return Script(v8::Script::New(String(source), Value(filename)));
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling signature.cc
+In file included from signature.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Signature; VALUE = long unsigned int]’:
+signature.cc:16:12:   required from here
+   16 |     return Signature(v8::Signature::New(recv, length, types));
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling stack.cc
+In file included from stack.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+stack.cc:32:12:   required from here
+   32 |     return Frame(Trace(self)->GetFrame(NUM2UINT(index)));
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling string.cc
+In file included from string.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::String; VALUE = long unsigned int]’:
+string.cc:15:10:   required from here
+   15 |   return String(v8::String::New(RSTRING_PTR(string), (int)RSTRING_LEN(string)));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling template.cc
+In file included from template.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::ObjectTemplate; VALUE = long unsigned int]’:
+template.cc:33:12:   required from here
+   33 |     return ObjectTemplate(v8::ObjectTemplate::New());
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling trycatch.cc
+In file included from trycatch.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+trycatch.cc: In constructor ‘rr::TryCatch::TryCatch(VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+trycatch.cc:27:5: note: in expansion of macro ‘Data_Get_Struct’
+   27 |     Data_Get_Struct(value, class v8::TryCatch, impl);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+trycatch.cc: In member function ‘rr::TryCatch::operator VALUE()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+trycatch.cc:31:12: note: in expansion of macro ‘Data_Wrap_Struct’
+   31 |     return Data_Wrap_Struct(Class, 0, 0, impl);
+      |            ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::Message; VALUE = long unsigned int]’:
+trycatch.cc:50:16:   required from here
+   50 |     return rr::Message(TryCatch(self)->Message());
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling v8.cc
+In file included from v8.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::StackFrame; VALUE = long unsigned int]’:
+rr.h:186:11:   required from here
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compiling value.cc
+In file included from value.cc:1:
+rr.h:87:11: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]
+   87 |   Enum<T>(VALUE value, T defaultValue = 0) : Equiv(value) {
+      |           ^~~~~
+rr.h:87:11: note: remove the ‘< >’
+In file included from /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+                 from /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+                 from /usr/include/ruby-3.4.0/ruby/defines.h:72,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:25,
+                 from /usr/include/ruby-3.4.0/ruby.h:38,
+                 from rr.h:5:
+rr.h: In member function ‘virtual rr::Ref<T>::operator v8::Handle<T>() const’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:195:7: note: in expansion of macro ‘Data_Get_Struct’
+  195 |       Data_Get_Struct(this->value, class Holder, holder);
+      |       ^~~~~~~~~~~~~~~
+In file included from /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+                 from /usr/include/ruby-3.4.0/ruby/ruby.h:29:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: In member function ‘void rr::Ref<T>::dispose()’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: warning: ‘void* rb_data_object_get_warning(VALUE)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: note: in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rr.h:203:5: note: in expansion of macro ‘Data_Get_Struct’
+  203 |     Data_Get_Struct(this->value, class Holder, holder);
+      |     ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: note: declared here
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rr.h: At global scope:
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Value; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:422:11: note:   by ‘virtual rr::Value::operator VALUE()’
+  422 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h:186:11: warning: ‘rr::Ref<T>::operator VALUE() const [with T = v8::Object; VALUE = long unsigned int]’ was hidden [-Woverloaded-virtual=]
+  186 |   virtual operator VALUE() const {
+      |           ^~~~~~~~
+rr.h:619:11: note:   by ‘virtual rr::Object::operator VALUE()’
+  619 |   virtual operator VALUE();
+      |           ^~~~~~~~
+rr.h: In instantiation of ‘rr::Ref<T>::operator VALUE() const [with T = v8::String; VALUE = long unsigned int]’:
+value.cc:110:11:   required from here
+  110 |    return String(Value(self)->ToString());
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: warning: ‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ is deprecated: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rr.h:187:38: note: in expansion of macro ‘Data_Wrap_Struct’
+  187 |     return handle.IsEmpty() ? Qnil : Data_Wrap_Struct(Class, 0, &Holder::enqueue, new Holder(handle));
+      |                                      ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: note: declared here
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+linking shared-object v8/init.so
+
+current directory: /home/xrito/git/dailyblog/vendor/bundle/ruby/3.4.0/gems/therubyracer-0.12.3/ext/v8
+make DESTDIR\= sitearchdir\=./.gem.20250812-153146-pusghw sitelibdir\=./.gem.20250812-153146-pusghw install
+/usr/bin/install -c -m 0755 init.so ./.gem.20250812-153146-pusghw/v8
+
+current directory: /home/xrito/git/dailyblog/vendor/bundle/ruby/3.4.0/gems/therubyracer-0.12.3/ext/v8
+make DESTDIR\= sitearchdir\=./.gem.20250812-153146-pusghw sitelibdir\=./.gem.20250812-153146-pusghw clean

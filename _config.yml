@@ -28,6 +28,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jektex
+  - jekyll-sitemap
 
 jektex:
   cache_dir: ".jektex-cache"
@@ -36,3 +37,11 @@ jektex:
   macros:
     - ["\\Q", "\\mathbb{Q}"]
     - ["\\C", "\\mathbb{C}"]
+
+lunr_search:
+  exclude: [archive.md, about.md] # pages to skip
+  fields: 
+    title: 10
+    content: 5
+    categories: 5
+    tags: 5
