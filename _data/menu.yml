@@ -15,7 +15,7 @@ entries:
 
   - title: "My Most Recent Posts"
     post_list:
-      limit: 5
+      limit: 3
       show_more: true
       show_more_text: "See archive..."
       show_more_url: "archive.html"
@@ -30,14 +30,14 @@ entries:
   - title: "RSS Feed"
     url: "feed.xml"
 
-  - title: "More Links"
-    entries:
-      - title: "With Subitems"
-        entries:
-          - title: "With Subsubitems"
-          - title: "Example Page"
-            url: "about"
+# #  - title: "More Links"
+# #    entries:
+# #      - title: "With Subitems"
+#         entries:
+#           - title: "With Subsubitems"
+#           - title: "Example Page"
+#             url: "about"
 
-  - title: "Pro Tip"
-    entries:
-      - title: "To edit this menu, edit the _data/menu.yml file."
+#   - title: "Pro Tip"
+#     entries:
+#       - title: "To edit this menu, edit the _data/menu.yml file."
