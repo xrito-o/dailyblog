@@ -1,6 +1,7 @@
 ---
 layout: post
 hidden: true
+category: [japanese,YEAR-2025]
 ---
 ---
 

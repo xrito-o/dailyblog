@@ -20,12 +20,20 @@ entries:
       show_more_text: "See archive..."
       show_more_url: "archive.html"
 
-  - title: "Posts by Category"
+  - title: "Japanese Posts Category"
     post_list:
-      category: "example2"
+      category: "japanese"
+      limit: 3
       show_more: true
       show_more_text: "See more posts..."
-      show_more_url: "example2-archive.html"
+      show_more_url: "japanese-archive.html"
+  - title: "2025 Posts Category"
+    post_list:
+      category: "YEAR-2025"
+      limit: 0
+      show_more: true
+      show_more_text: "See more posts..."
+      show_more_url: "2025-archive.html"
 
   - title: "RSS Feed"
     url: "feed.xml"

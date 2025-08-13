@@ -2,6 +2,7 @@
 layout: post
 date: 2025-06-29-04:28:19
 hidden: true
+category: [YEAR-2025]
 ---
 
 **Date:2022-10-16**

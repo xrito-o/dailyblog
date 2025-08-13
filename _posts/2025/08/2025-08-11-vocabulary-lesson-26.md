@@ -3,6 +3,7 @@ title: "Vocabulary Lesson-26"
 date: 2025-08-11-23:07:16
 layout: post
 hidden: true
+category: [japanese,YEAR-2025]
 ---
 
 **Lesson-26**

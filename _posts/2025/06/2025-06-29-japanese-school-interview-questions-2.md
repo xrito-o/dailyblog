@@ -1,6 +1,7 @@
 ---
 layout: post
 hidden: true
+category: [japanese,YEAR-2025]
 ---
 
 ### **Common questions they ask in Japanese language school interviews**

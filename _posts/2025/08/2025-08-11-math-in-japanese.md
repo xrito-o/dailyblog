@@ -3,6 +3,7 @@ title: "Math in Japanese"
 date: 2025-08-11-10:07:56
 layout: post
 hidden: true
+category: [japanese,YEAR-2025]
 ---
 
 {% include embed/youtube.html id='pln40k04Z0A' %}

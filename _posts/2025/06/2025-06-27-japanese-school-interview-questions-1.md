@@ -1,6 +1,7 @@
 ---
 layout: post
 hidden: true
+category: [japanese,YEAR-2025]
 ---
 #### Interview dates
 ao-i-s school interview date: 01-07-2025
