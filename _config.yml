@@ -77,6 +77,6 @@ highlighter: rouge
 # -----------------------------
 # Exclude folders
 # -----------------------------
-exclude:
-  - vendor/
-  - .jektex-cache/
+# exclude:
+#   # - vendor/
+#   - .jektex-cache/
