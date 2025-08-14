@@ -12,6 +12,7 @@ entries:
       - title: "TO DO LIST"
         url: "todo"
       - title: "I also have a <a href='https://blog.xrito.xyz/'>tech blog</a>"
+      - title: " listen to my <a href='https://open.spotify.com/user/315qkvl3ovrn3m65qgazp52o5yku'>playlists</a>"
 
   - title: "My Most Recent Posts"
     post_list:

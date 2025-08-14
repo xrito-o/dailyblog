@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://xrito-o.github.io/dailyblog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://xrito-o.github.io/dailyblog/" rel="alternate" type="text/html" /><updated>2025-08-13T05:47:42+00:00</updated><id>https://xrito-o.github.io/dailyblog/feed.xml</id><title type="html">My Minimal Blog(no style, please!)</title><subtitle>A (nearly) no-CSS, fast, minimalist Jekyll theme.
-</subtitle><author><name>Riccardo Graziosi</name></author><entry><title type="html">Vocabulary Lesson-26</title><link href="https://xrito-o.github.io/dailyblog/vocabulary-lesson-26.html" rel="alternate" type="text/html" title="Vocabulary Lesson-26" /><published>2025-08-11T23:07:16+00:00</published><updated>2025-08-11T23:07:16+00:00</updated><id>https://xrito-o.github.io/dailyblog/vocabulary-lesson-26</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/vocabulary-lesson-26.html"><![CDATA[<p><strong>Lesson-26</strong></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://xrito-o.github.io/dailyblog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://xrito-o.github.io/dailyblog/" rel="alternate" type="text/html" /><updated>2025-08-14T00:31:10+00:00</updated><id>https://xrito-o.github.io/dailyblog/feed.xml</id><title type="html">My Minimal Blog(no style, please!)</title><author><name>Riccardo Graziosi</name></author><entry><title type="html">Vocabulary Lesson-26</title><link href="https://xrito-o.github.io/dailyblog/vocabulary-lesson-26.html" rel="alternate" type="text/html" title="Vocabulary Lesson-26" /><published>2025-08-11T23:07:16+00:00</published><updated>2025-08-11T23:07:16+00:00</updated><id>https://xrito-o.github.io/dailyblog/vocabulary-lesson-26</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/vocabulary-lesson-26.html"><![CDATA[<p><strong>Lesson-26</strong></p>
 
 <ol>
   <li><strong>みます (mimasu)</strong>: しゅくだいを しましたから、ちょっと みてください。
@@ -391,8 +390,50 @@
   <li>who it works?</li>
   <li>variable in php</li>
   <li>data type in php</li>
-  <li></li>
-</ul>]]></content><author><name>Riccardo Graziosi</name></author><category term="[&quot;YEAR-2025&quot;]" /><summary type="html"><![CDATA[what is php? why php? who it works? variable in php data type in php]]></summary></entry><entry><title type="html">Jlpt Study Routine</title><link href="https://xrito-o.github.io/dailyblog/jlpt-study-routine.html" rel="alternate" type="text/html" title="Jlpt Study Routine" /><published>2025-07-02T00:00:00+00:00</published><updated>2025-07-02T00:00:00+00:00</updated><id>https://xrito-o.github.io/dailyblog/JLPT-STUDY-ROUTINE</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/jlpt-study-routine.html"><![CDATA[<hr />
+</ul>
+
+<h2 id="what-is-php">What is PHP?</h2>
+<p>PHP (Hypertext Preprocessor) is a popular open-source server-side scripting language designed for web development. It is embedded within HTML and is especially suited for creating dynamic and interactive websites.</p>
+
+<h2 id="why-php">Why PHP?</h2>
+<ul>
+  <li>Easy to learn and use for beginners</li>
+  <li>Widely supported by hosting providers</li>
+  <li>Large community and extensive documentation</li>
+  <li>Integrates well with databases like MySQL</li>
+  <li>Powers many popular platforms (WordPress, Drupal, etc.)</li>
+</ul>
+
+<h2 id="how-does-php-work">How does PHP work?</h2>
+<p>PHP code is executed on the server. When a user requests a PHP page, the server processes the PHP code and sends the resulting HTML to the user’s browser. This allows for dynamic content generation and interaction with databases.</p>
+
+<h2 id="variables-in-php">Variables in PHP</h2>
+<p>Variables in PHP start with a <code class="language-plaintext highlighter-rouge">$</code> sign followed by the variable name. They are used to store data that can be manipulated throughout the script.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$greeting</span> <span class="o">=</span> <span class="s2">"Hello, World!"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$greeting</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="data-types-in-php">Data Types in PHP</h2>
+<p>PHP supports several data types:</p>
+<ul>
+  <li>String</li>
+  <li>Integer</li>
+  <li>Float (double)</li>
+  <li>Boolean</li>
+  <li>Array</li>
+  <li>Object</li>
+  <li>NULL</li>
+</ul>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$name</span> <span class="o">=</span> <span class="s2">"Alice"</span><span class="p">;</span>      <span class="c1">// String</span>
+<span class="nv">$age</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>             <span class="c1">// Integer</span>
+<span class="nv">$price</span> <span class="o">=</span> <span class="mf">19.99</span><span class="p">;</span>        <span class="c1">// Float</span>
+<span class="nv">$isActive</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>      <span class="c1">// Boolean</span>
+<span class="nv">$colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">];</span> <span class="c1">// Array</span>
+</code></pre></div></div>
+
+<p>PHP is flexible and forgiving, making it a great choice for rapid web development.</p>]]></content><author><name>Riccardo Graziosi</name></author><category term="[&quot;YEAR-2025&quot;]" /><summary type="html"><![CDATA[what is php? why php? who it works? variable in php data type in php]]></summary></entry><entry><title type="html">Jlpt Study Routine</title><link href="https://xrito-o.github.io/dailyblog/jlpt-study-routine.html" rel="alternate" type="text/html" title="Jlpt Study Routine" /><published>2025-07-02T00:00:00+00:00</published><updated>2025-07-02T00:00:00+00:00</updated><id>https://xrito-o.github.io/dailyblog/JLPT-STUDY-ROUTINE</id><content type="html" xml:base="https://xrito-o.github.io/dailyblog/jlpt-study-routine.html"><![CDATA[<hr />
 
 <h3 id="exam-date-july-6-2025-saturday"><strong>EXAM DATE: July 6, 2025 (Saturday)</strong></h3>
 

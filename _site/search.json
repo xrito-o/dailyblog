@@ -18,7 +18,7 @@
       "title": "PHP",
       "url": "https://xrito-o.github.io/dailyblog/php.html",
       "date": "2025-08-06",
-      "content": "  what is php?  why php?  who it works?  variable in php  data type in php  "
+      "content": "  what is php?  why php?  who it works?  variable in php  data type in phpWhat is PHP?PHP (Hypertext Preprocessor) is a popular open-source server-side scripting language designed for web development. It is embedded within HTML and is especially suited for creating dynamic and interactive websites.Why PHP?  Easy to learn and use for beginners  Widely supported by hosting providers  Large community and extensive documentation  Integrates well with databases like MySQL  Powers many popular platforms (WordPress, Drupal, etc.)How does PHP work?PHP code is executed on the server. When a user requests a PHP page, the server processes the PHP code and sends the resulting HTML to the user’s browser. This allows for dynamic content generation and interaction with databases.Variables in PHPVariables in PHP start with a $ sign followed by the variable name. They are used to store data that can be manipulated throughout the script.$greeting = &quot;Hello, World!&quot;;echo $greeting;Data Types in PHPPHP supports several data types:  String  Integer  Float (double)  Boolean  Array  Object  NULL$name = &quot;Alice&quot;;      // String$age = 25;             // Integer$price = 19.99;        // Float$isActive = true;      // Boolean$colors = [&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;]; // ArrayPHP is flexible and forgiving, making it a great choice for rapid web development."
     },
   
     {

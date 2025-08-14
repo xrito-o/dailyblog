@@ -4,6 +4,13 @@
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <main class="page-content" aria-label="Content">
       <div class="w">
+
+        <!-- <img src="{{ site.baseurl }}/assets/test.png" 
+     alt="hologirl" 
+     width="290" 
+     style="display:block; margin:2rem 0 2rem 2rem; background:transparent; border:none; box-shadow:none;"> -->
+
+
         {{ content }}
       </div>
     </main>
@@ -12,6 +19,7 @@
       {%-include goat_counter.html-%}
     {%-endif-%}
 
+    <script src="assets/js/copy-button.js"></script>
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
         <script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>

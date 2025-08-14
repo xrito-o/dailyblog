@@ -23,12 +23,23 @@
 <!-- End Jekyll SEO tag -->
 <link type="application/atom+xml" rel="alternate" href="https://xrito-o.github.io/dailyblog/feed.xml" title="My Minimal Blog(no style, please!)" /><link rel="shortcut icon" type="image/x-icon" href="/dailyblog/logo.png" />
   <link rel="stylesheet" href="/dailyblog/assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <!-- For Japanese font, use local or web font -->
+  <link href="/dailyblog/assets/fonts/UDDigiKyokashoN-B.ttf" rel="preload" as="font" type="font/ttf" crossorigin>
+
 
 
 </head><body a="dark">
     <main class="page-content" aria-label="Content">
       <div class="w">
-        <a href="/dailyblog/">..</a><article>
+
+        <!-- <img src="/dailyblog/assets/test.png" 
+     alt="hologirl" 
+     width="290" 
+     style="display:block; margin:2rem 0 2rem 2rem; background:transparent; border:none; box-shadow:none;"> -->
+
+
+        <a href="/dailyblog/">cd ~</a><article>
   <p class="post-meta">
     <time datetime="2025-08-06 15:48:54 +0000">2025-08-06</time>
   </p>
@@ -41,11 +52,55 @@
   <li>who it works?</li>
   <li>variable in php</li>
   <li>data type in php</li>
-  <li></li>
 </ul>
+
+<h2 id="what-is-php">What is PHP?</h2>
+<p>PHP (Hypertext Preprocessor) is a popular open-source server-side scripting language designed for web development. It is embedded within HTML and is especially suited for creating dynamic and interactive websites.</p>
+
+<h2 id="why-php">Why PHP?</h2>
+<ul>
+  <li>Easy to learn and use for beginners</li>
+  <li>Widely supported by hosting providers</li>
+  <li>Large community and extensive documentation</li>
+  <li>Integrates well with databases like MySQL</li>
+  <li>Powers many popular platforms (WordPress, Drupal, etc.)</li>
+</ul>
+
+<h2 id="how-does-php-work">How does PHP work?</h2>
+<p>PHP code is executed on the server. When a user requests a PHP page, the server processes the PHP code and sends the resulting HTML to the user’s browser. This allows for dynamic content generation and interaction with databases.</p>
+
+<h2 id="variables-in-php">Variables in PHP</h2>
+<p>Variables in PHP start with a <code class="language-plaintext highlighter-rouge">$</code> sign followed by the variable name. They are used to store data that can be manipulated throughout the script.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$greeting</span> <span class="o">=</span> <span class="s2">"Hello, World!"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$greeting</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="data-types-in-php">Data Types in PHP</h2>
+<p>PHP supports several data types:</p>
+<ul>
+  <li>String</li>
+  <li>Integer</li>
+  <li>Float (double)</li>
+  <li>Boolean</li>
+  <li>Array</li>
+  <li>Object</li>
+  <li>NULL</li>
+</ul>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$name</span> <span class="o">=</span> <span class="s2">"Alice"</span><span class="p">;</span>      <span class="c1">// String</span>
+<span class="nv">$age</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>             <span class="c1">// Integer</span>
+<span class="nv">$price</span> <span class="o">=</span> <span class="mf">19.99</span><span class="p">;</span>        <span class="c1">// Float</span>
+<span class="nv">$isActive</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>      <span class="c1">// Boolean</span>
+<span class="nv">$colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">];</span> <span class="c1">// Array</span>
+</code></pre></div></div>
+
+<p>PHP is flexible and forgiving, making it a great choice for rapid web development.</p>
+
 
 </article>
       </div>
-    </main>
+    </main><script src="assets/js/copy-button.js"></script>
+    
   </body>
 </html>
